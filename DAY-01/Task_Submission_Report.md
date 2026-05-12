@@ -79,6 +79,8 @@ function handleCodeClick() {
 
 ## 📸 Screenshots / Proof of Work
 
+> **Dynamic Greeting Screenshot:**
+> ![Greeting Screenshot](./Screenshots/dynamic-greeting.png)
 
 > **Skill Section Screenshot:**
 > ![Skill Screenshot](./Screenshots/skills-section.png)
