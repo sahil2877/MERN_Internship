@@ -1,4 +1,4 @@
-/* ===== Page ===== */
+
 
 body{
   margin: 0;
@@ -8,7 +8,6 @@ body{
   color: white;
 }
 
-/* ===== Main Container ===== */
 
 .sb-container{
   width: 90%;
@@ -17,16 +16,15 @@ body{
   padding: 40px 20px;
 }
 
-/* ===== Heading ===== */
 
 .sb-heading{
+  
   text-align: center;
   font-size: 42px;
   margin-bottom: 45px;
   text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
 }
 
-/* ===== Skills Wrapper ===== */
 
 .sb-skill-wrapper{
   display: flex;
@@ -35,7 +33,6 @@ body{
   gap: 25px;
 }
 
-/* ===== Skill Card ===== */
 
 .sb-skill-box{
   width: 240px;
@@ -51,14 +48,12 @@ body{
   transform: translateY(-8px) scale(1.03);
 }
 
-/* ===== Skill Name ===== */
 
 .sb-skill-box h2{
   margin: 0;
   font-size: 28px;
 }
 
-/* ===== Level ===== */
 
 .sb-level{
   margin-top: 15px;
@@ -66,7 +61,6 @@ body{
   color: #f1f5f9;
 }
 
-/* ===== Status Badge ===== */
 
 .sb-status{
   margin-top: 18px;

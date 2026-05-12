@@ -3,7 +3,7 @@ import SkillBadge from "./SkillBadge";
 function SkillList(props) {
 
   return (
-    <div>
+    <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
 
       {
         props.skills.map((item, index) => (

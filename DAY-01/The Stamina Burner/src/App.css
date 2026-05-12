@@ -1,4 +1,5 @@
 
+
 body{
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body{
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: white;
 }
+
 
 
 .sb-container{
@@ -16,6 +18,7 @@ body{
   border-radius: 25px;
   text-align: center;
   background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
   box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
 }
 
@@ -29,6 +32,7 @@ body{
 }
 
 
+
 .sb-stamina{
   font-size: 70px;
   font-weight: bold;
@@ -36,6 +40,7 @@ body{
   color: #4ade80;
   text-shadow: 0px 0px 18px #22c55e;
 }
+
 
 
 .sb-btn{
@@ -46,23 +51,41 @@ body{
   border-radius: 50px;
   cursor: pointer;
   color: white;
-  background: linear-gradient(to right, #010000, #150e11);
-  box-shadow: 0px 6px 18px rgba(27, 6, 15, 0.5);
-  
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  box-shadow: 0px 6px 18px rgba(221,36,118,0.5);
+  transition: 0.3s;
 }
 
+
+.sb-btn:hover{
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 10px 25px rgba(255,81,47,0.6);
+}
 
 
 .sb-btn:active{
   transform: scale(0.96);
 }
 
+
 .sb-btn:disabled{
   background: linear-gradient(to right, #7f1d1d, #dc2626);
   cursor: not-allowed;
   box-shadow: none;
 }
-  
+
+
+@media(max-width:700px){
+
+  .sb-title{
+    font-size: 30px;
+  }
+
+  .sb-stamina{
+    font-size: 50px;
+  }
+
+}
 
 @media(max-width:700px){
 
