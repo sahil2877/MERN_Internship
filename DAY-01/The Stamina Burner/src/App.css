@@ -1,12 +1,79 @@
-.sb-container{
-  text-align: center;
-  margin-top: 50px;
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
 }
 
-.sb-container button{
-  padding: 12px 20px;
-  font-size: 18px;
+
+.sb-container{
+  width: 90%;
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 45px;
+  border-radius: 25px;
+  text-align: center;
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+}
+
+
+
+.sb-title{
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px #38bdf8;
+}
+
+
+.sb-stamina{
+  font-size: 70px;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #4ade80;
+  text-shadow: 0px 0px 18px #22c55e;
+}
+
+
+.sb-btn{
+  padding: 16px 36px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #010000, #150e11);
+  box-shadow: 0px 6px 18px rgba(27, 6, 15, 0.5);
+  
+}
+
+
+
+.sb-btn:active{
+  transform: scale(0.96);
+}
+
+.sb-btn:disabled{
+  background: linear-gradient(to right, #7f1d1d, #dc2626);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+  
+
+@media(max-width:700px){
+
+  .sb-title{
+    font-size: 30px;
+  }
+
+  .sb-stamina{
+    font-size: 50px;
+  }
+
 }
 
 .counter {

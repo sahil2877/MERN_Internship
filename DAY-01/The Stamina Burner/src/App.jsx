@@ -43,7 +43,7 @@ function App() {
 
       <h2>Stamina: {stamina}</h2>
 
-      <button
+      <button className='sb-btn'
         onClick={handleCodeClick}
         disabled={stamina <= 0}
       >
