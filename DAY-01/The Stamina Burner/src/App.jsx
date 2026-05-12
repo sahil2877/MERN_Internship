@@ -37,7 +37,7 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className="sb-container">
 
       <h1>Developer Stamina Burner</h1>
 
