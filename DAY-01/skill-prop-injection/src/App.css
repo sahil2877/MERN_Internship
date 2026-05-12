@@ -1,3 +1,82 @@
+/* ===== Page ===== */
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #1d2671, #c33764);
+  color: white;
+}
+
+/* ===== Main Container ===== */
+
+.sb-container{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ===== Heading ===== */
+
+.sb-heading{
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 45px;
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+}
+
+/* ===== Skills Wrapper ===== */
+
+.sb-skill-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ===== Skill Card ===== */
+
+.sb-skill-box{
+  width: 240px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.sb-skill-box:hover{
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* ===== Skill Name ===== */
+
+.sb-skill-box h2{
+  margin: 0;
+  font-size: 28px;
+}
+
+/* ===== Level ===== */
+
+.sb-level{
+  margin-top: 15px;
+  font-size: 18px;
+  color: #f1f5f9;
+}
+
+/* ===== Status Badge ===== */
+
+.sb-status{
+  margin-top: 18px;
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  font-weight: bold;
+  box-shadow: 0px 4px 12px rgba(0,114,255,0.4);
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;

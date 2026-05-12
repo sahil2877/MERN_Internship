@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
 
-      <h1>My Skills</h1>
+      <h1 className="sb-heading">My Skills</h1>
 
       <SkillList skills={skills} />
 

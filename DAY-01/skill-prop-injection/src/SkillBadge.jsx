@@ -1,7 +1,7 @@
 function SkillBadge(props) {
 
   return (
-    <div className="sb-skillBox">
+    <div className="sb-skill-box">
 
       <h2>{props.name}</h2>
 
