@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --fallback-b1: 0 0% 100%;
+}
+
