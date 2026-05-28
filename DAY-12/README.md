@@ -157,30 +157,24 @@ String.fromCharCode(text.charCodeAt(i) - 3)
 ```
 
 ---
-
 # 📸 Screenshots / Proof of Work
 
-## 🖥️ UI Screenshot
+## Main UI Interface
 
-```md
-![UI Screenshot](./screenshots/ui.png)
-```
+![Main UI](./screenshots/ui.png)
 
 ---
 
-## 🔐 Encoding & Encryption Result
+## Encoding & Encryption Result
 
-```md
-![Encoding Result](./screenshots/encoding-encryption.png)
-```
+![Encoding Encryption](./screenshots/encoding-encryption.png)
 
 ---
 
-## 🔓 Decoding & Decryption Result
+## Decoding & Decryption Result
 
-```md
-![Decoding Result](./screenshots/decoding-decryption.png)
-```
+![Decoding Decryption](./screenshots/decoding-decryption.png)
+
 
 ---
 
