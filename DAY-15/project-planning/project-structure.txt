@@ -1,0 +1,21 @@
+Software Development Lifecycle
+
+Requirement Gathering
+       ↓
+Project Planning
+       ↓
+Technology Selection
+       ↓
+Module Division
+       ↓
+Backend Development
+       ↓
+Database Integration
+       ↓
+Frontend Development
+       ↓
+Testing
+       ↓
+Deployment
+       ↓
+Maintenance

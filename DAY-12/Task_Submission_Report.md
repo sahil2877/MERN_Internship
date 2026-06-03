@@ -6,7 +6,7 @@
 | :---------------- | :------------------------------- |
 | **Student Name**  | Sahil Belim                      |
 | **Internship ID** | ND              |
-| **Date**          | 2026-05-28                       |
+| **Date**          | 2026-05-26                       |
 | **Course Day**    | Day 12                           |
 | **GitHub Repo**   | https://github.com/sahil2877/MERN_Internship |
 
