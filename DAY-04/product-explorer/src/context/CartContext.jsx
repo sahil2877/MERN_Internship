@@ -2,6 +2,7 @@ import { createContext, useState } from "react";
 import { useEffect } from "react";
 export const CartContext = createContext();
 
+
 export default function CartProvider({ children }) {
 
     const [cart,setCart] = useState(()=>{
@@ -12,15 +13,7 @@ export default function CartProvider({ children }) {
       ? JSON.parse(savedCart)
       : [];
 })
-
-    
-    const addToCart = (product) => {
-
-    const existingItem = cart.find(
-        (item) => item.id === product.id
-    );
-
-    useEffect(()=>{
+ useEffect(()=>{
 
    localStorage.setItem(
       "cart",
@@ -28,6 +21,14 @@ export default function CartProvider({ children }) {
    )
 
 },[cart])
+    
+    const addToCart = (product) => {
+
+    const existingItem = cart.find(
+        (item) => item.id === product.id
+    );
+
+   
 
     if (existingItem) {
 
@@ -36,7 +37,7 @@ export default function CartProvider({ children }) {
             if (item.id === product.id) {
 
                 if (item.quantity >= 10) {
-                    alert("Maximum quantity is 10");
+                   alert("Maximum quantity is 10");
                     return item;
                 }
 
@@ -60,7 +61,7 @@ export default function CartProvider({ children }) {
                 quantity: 1
             }
         ]);
-
+       alert("Product Added To Cart");
     }
 
 };
@@ -72,7 +73,7 @@ const increaseQuantity = (id) => {
         if (item.id === id) {
 
             if (item.quantity >= 10) {
-                alert("Maximum quantity is 10");
+              alert("Maximum quantity is 10")
                 return item;
             }
 
@@ -113,7 +114,7 @@ const removeItem = (id) => {
     const updatedCart = cart.filter(
         (item) => item.id !== id
     );
-
+    alert("Item Removed")
     setCart(updatedCart);
 };
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaShoppingCart } from "react-icons/fa";
 import { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
@@ -20,15 +21,19 @@ export default function Navbar({ search, setSearch }) {
   onChange={(e) => setSearch(e.target.value)}
 />
 <Link to="/cart" className="cart-link">
- Cart (
-{
- cart.reduce(
-   (total,item)=>
-   total + item.quantity,
-   0
- )
-}
-)
+
+  <FaShoppingCart />
+
+  <span className="cart-badge">
+    {
+      cart.reduce(
+        (total,item)=>
+        total + item.quantity,
+        0
+      )
+    }
+  </span>
+
 </Link>
 
     </div>

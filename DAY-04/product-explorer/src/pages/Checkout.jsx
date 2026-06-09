@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from "react-router-dom";
 
+
 export default function Checkout() {
 
     const { cart } = useContext(CartContext)
@@ -80,6 +81,15 @@ export default function Checkout() {
                     Final Amount :
                     ₹ {finalAmount.toFixed(2)}
                 </h2>
+                <button
+  className="place-order-btn"
+  onClick={() => {
+   alert("Order Placed Successfully")
+  }}
+>
+  Place Order
+</button>
+                
 
             </div>
 

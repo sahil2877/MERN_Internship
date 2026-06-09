@@ -17,7 +17,9 @@ export default function ProductCard({ item }) {
         alt={item.title}
       />
 
-      <h3>{item.title}</h3>
+      <h3 className="product-title">
+  {item.title}
+</h3>
 
       <p>
         ₹ {item.price}
