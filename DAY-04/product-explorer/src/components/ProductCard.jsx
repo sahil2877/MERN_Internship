@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { CartContext } from '../context/CartContext'
 
 export default function ProductCard({ item }) {
+  const { addToCart } = useContext(CartContext);
 
  return (
 
@@ -19,7 +22,35 @@ export default function ProductCard({ item }) {
       <p>
         ₹ {item.price}
       </p>
+      <p>
+  Stock : {item.stock}
+</p>
+      {
+ item.stock > 0 ?
 
+ (
+   <button
+     className='cart-btn'
+     onClick={(e)=>{
+       e.preventDefault()
+       addToCart(item)
+     }}
+   >
+     Add To Cart
+   </button>
+ )
+
+ :
+
+ (
+   <button
+     className='out-stock'
+     disabled
+   >
+     Out Of Stock
+   </button>
+ )
+}
     </div>
 
   </Link>

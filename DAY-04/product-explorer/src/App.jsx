@@ -1,27 +1,39 @@
-import React from 'react'
 
-import { Routes, Route } from 'react-router-dom'
+import React, { lazy, Suspense } from "react";
 
-import Home from './pages/Home'
+const Cart = lazy(() => import("./pages/Cart"));
+const Checkout = lazy(() => import("./pages/Checkout"));
 
-import ProductDetails from './pages/ProductDetails'
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+
+import ProductDetails from "./pages/ProductDetails";
 
 export default function App() {
-
   return (
-
     <Routes>
+      <Route path="/" element={<Home />} />
+
+      <Route path="/product/:id" element={<ProductDetails />} />
 
       <Route
-        path='/'
-        element={<Home />}
+        path="/cart"
+        element={
+          <Suspense fallback={<h2>Loading...</h2>}>
+            <Cart />
+          </Suspense>
+        }
       />
 
-      <Route
-        path='/product/:id'
-        element={<ProductDetails />}
-      />
-
+     <Route
+ path='/checkout'
+ element={
+   <Suspense fallback={<h2>Loading...</h2>}>
+      <Checkout />
+   </Suspense>
+ }
+/>
     </Routes>
-  )
+  );
 }
